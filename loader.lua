@@ -22,6 +22,5 @@ local chosenGame = ({
 })[game.PlaceId]
 
 if chosenGame then
-    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
-  else
-  end
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
+end
