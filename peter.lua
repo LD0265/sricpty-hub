@@ -29,14 +29,6 @@ local money = game:GetService("Workspace").Interactables.MoneyBills:GetDescendan
 local playerHead = game.Players.LocalPlayer.Character.Head
 local bag = game:GetService("Workspace").Interactables.BagFolder:GetDescendants()
             
-b:Button("Tp to Store",function()
-    game:GetService("Workspace").LMD2017.HumanoidRootPart.CFrame = game:GetService("Workspace").Scenery.GasStation.GasStation.Part.CFrame
-    end)
-
-b:Button("Tp to House",function()
-    game:GetService("Workspace").LMD2017.HumanoidRootPart.CFrame = game:GetService("Workspace").Scenery.House.HouseModel.HouseFrame.Floor.CFrame
-end)      
-         
 for i,v in pairs(money) do
     if v.Name == 'TouchInterest' and v.Parent then
         firetouchinterest(playerHead, v.Parent, 0)
@@ -54,5 +46,10 @@ end
 end
 
 end)
-
+b:Button("Tp to Store",function()
+    game:GetService("Workspace").LMD2017.HumanoidRootPart.CFrame = game:GetService("Workspace").Scenery.GasStation.GasStation.Part.CFrame
+    end)
+b:Button("Tp to House",function()
+    game:GetService("Workspace").LMD2017.HumanoidRootPart.CFrame = game:GetService("Workspace").Scenery.House.HouseModel.HouseFrame.Floor.CFrame
+end)     
 c:DestroyGui()
