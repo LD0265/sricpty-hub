@@ -4,8 +4,6 @@ local notif = Notification.new("success", "Success", "Executing Script")
     wait(2)
     notif:delete()
 
-print(game.PlaceId)
-
 local chosenGame = ({
     [9660733037] = "peter.lua",
     [9312552871] = "floppa.lua"
