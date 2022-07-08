@@ -6,7 +6,8 @@ local notif = Notification.new("success", "Success", "Executing Script")
 
 local chosenGame = ({
     [9660733037] = "peter.lua",
-    [9312552871] = "floppa.lua"
+    [9312552871] = "floppa.lua",
+    [9498006165] = "tappingsim.lua"
 })[game.PlaceId]
 
 if chosenGame then
