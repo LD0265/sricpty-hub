@@ -17,7 +17,7 @@ else
 end
 
 local chosenGame = ({
-    [9571238478] = "peter.lua",
+    [9660733037] = "peter.lua",
     [9203864304] = "floppa.lua"
 })[game.PlaceId]
 
