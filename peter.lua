@@ -4,9 +4,9 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloo
 
 local w = library:CreateWindow("ElEmDee Hub") -- Creates the window
 
-local b = w:CreateFolder("evyn fat")
+local b = w:CreateFolder("Main")
 
-local c = w:CreateFolder("misc")-- Creates the folder(U will put here your buttons,etc)
+local c = w:CreateFolder("Misc")-- Creates the folder(U will put here your buttons,etc)
 
 b:Label("Autofarm",{
     TextSize = 25; -- Self Explaining
