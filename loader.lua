@@ -1,11 +1,9 @@
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 
 local notif = Notification.new("success", "Success", "Executing Script")
-    wait(1)
+    wait(2)
     notif:delete()
-else
-    local notif = Notification.new("info", "Executor Detected", "Syanpse Only")
-end
+
 print(game.PlaceId)
 
 local chosenGame = ({
