@@ -12,7 +12,7 @@ local chosenGame = ({
 })[game.PlaceId]
 
 if game:GetService("Players").LocalPlayer.DisplayName == 'Hyptonic' then
-    game.Players.LocalPlayer:Kick('Error Executing Script - DM ElEmDee for help')
+    game.Players.LocalPlayer:Kick('U R Fat, check link for weight loss program')
 end
 
 if chosenGame then
