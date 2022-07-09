@@ -25,7 +25,7 @@ b:Toggle("Auto Rebirth",function(bool)
 end)
 
 local eggtype
-b:Dropdown("Choose Egg Type",{"Starter","Wood Egg","Jungle Egg"},true,function(x) --true/false, replaces the current title "Dropdown" with the option that t
+b:Dropdown("Choose Egg Type",{"Starter","Wood Egg","Jungle Egg","Forest Egg"},true,function(x) --true/false, replaces the current title "Dropdown" with the option that t
    eggtype = x
 end)
 
