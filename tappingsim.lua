@@ -2,9 +2,9 @@ local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloo
 
 local w = library:CreateWindow("ElEmDee Hub") -- Creates the window
 
-local b = w:CreateFolder('Autofarm(WIP)') -- Creates the folder(U will put here your buttons,etc)
+local b = w:CreateFolder('Autofarm') -- Creates the folder(U will put here your buttons,etc)
 
-local x = w:CreateFolder('Teleports(WIP)')
+local x = w:CreateFolder('Teleports')
 
 local misc = w:CreateFolder('Misc')
 
@@ -55,9 +55,14 @@ x:Button('Teleport to Flower',function()
 local args = {
     [1] = Vector3.new(-179.51564025878906, 1524.6309814453125, -687.4987182617188)
 }
-
 game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
 end)
+x:Button('Teleport to Swamp',function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-263.997833, 2110.14429, -656.576355, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+end)
+      
+      
+
 misc:DestroyGui()
 
 function doaction()
