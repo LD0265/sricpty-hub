@@ -57,7 +57,7 @@ misc:DestroyGui()
 function doaction()
     spawn(function()
         while getgenv().startaction == true  do 
-           game:GetService("ReplicatedStorage").Events.Tap:InvokeServer()wait()
+           game:GetService("ReplicatedStorage").Events.Tap:FireServer()wait()
         end
     end)
 end
