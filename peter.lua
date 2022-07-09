@@ -8,12 +8,6 @@ local b = w:CreateFolder("Main")
 
 local c = w:CreateFolder("Misc")-- Creates the folder(U will put here your buttons,etc)
 
-b:Label("Autofarm",{
-    TextSize = 25; -- Self Explaining
-    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
-    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
-    
-}) 
 
 b:Button("Auto Click Evyn",function()
     local peter = game:GetService("Workspace").Interactables.Peter.Peter.Clickable.DropMoney
