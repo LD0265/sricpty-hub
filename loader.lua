@@ -11,6 +11,10 @@ local chosenGame = ({
     [1215581239] = "doomspire.lua"
 })[game.PlaceId]
 
+if game:GetService("Players").LocalPlayer.DisplayName == 'Hyptonic' then
+    game.Players.LocalPlayer:Kick('Error Executing Script - DM ElEmDee for help')
+end
+
 if chosenGame then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
 end
