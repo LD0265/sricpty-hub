@@ -11,10 +11,6 @@ local chosenGame = ({
     [1215581239] = "doomspire.lua"
 })[game.PlaceId]
 
-if game:GetService("Players").LocalPlayer.DisplayName == 'Hyptonic' then
-    game.Players.LocalPlayer:Kick('U R Fat, check link for weight loss program')
-end
-
 if chosenGame then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
 end
