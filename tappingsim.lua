@@ -65,6 +65,11 @@ end
 function autorebirth()
     spawn(function()
         while getgenv().startrebirth == true  do 
+            local args = {
+    [1] = 100
+}
+game:GetService("ReplicatedStorage").Events.Rebirth:FireServer(unpack(args))
+            wait()
            local args = {
     [1] = 20
 }
