@@ -11,7 +11,7 @@ local c = w:CreateFolder("Misc")-- Creates the folder(U will put here your butto
 
 b:Button("Auto Click Evyn",function()
     local peter = game:GetService("Workspace").Interactables.Peter.Peter.Clickable.DropMoney
-        while wait(0.0000000000001) do
+        while wait() do
         fireclickdetector(peter)
     end
         end)
@@ -45,6 +45,14 @@ b:Button("Tp to Store",function()
 b:Button("Tp to House",function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Scenery.House.HouseModel.HouseFrame.Floor.CFrame
 end)      
-c:DestroyGui()
 
- 
+c:Button("Crash Server",function()
+        local crashserverthing = game.workspace:GetDescendants()
+        
+        for i,v in pairs(crashserverthing) do
+            print(v)
+            end
+        end)
+
+
+c:DestroyGui()
