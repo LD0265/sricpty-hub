@@ -25,7 +25,7 @@ b:Toggle("Auto Rebirth",function(bool)
 end)
 
 local eggtype
-b:Dropdown("Choose Egg Type",{"Starter","Wood Egg","Jungle Egg","Forest Egg"},true,function(x) --true/false, replaces the current title "Dropdown" with the option that t
+b:Dropdown("Choose Egg Type",{"Starter","Wood Egg","Jungle Egg","Forest Egg","Bee Egg","Swamp Egg","Snow Egg"},true,function(x) --true/false, replaces the current title "Dropdown" with the option that t
    eggtype = x
 end)
 
@@ -51,7 +51,13 @@ game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
 
 end)
 
+x:Button('Teleport to Flower',function()
+local args = {
+    [1] = Vector3.new(-179.51564025878906, 1524.6309814453125, -687.4987182617188)
+}
 
+game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
+end)
 misc:DestroyGui()
 
 function doaction()
