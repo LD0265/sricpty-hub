@@ -23,6 +23,13 @@ b:Toggle("Auto Clicker",function(bool)
    end
 end)
 
+b:Button("Infinite Jump",function()
+        game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+        end)
 
 x:Button("Tp to Yellow",function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(120, 27, -2)
