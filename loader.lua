@@ -8,9 +8,23 @@ local chosenGame = ({
     [9660733037] = "peter.lua",
     [9312552871] = "floppa.lua",
     [9498006165] = "tappingsim.lua",
-    [1215581239] = "doomspire.lua"
+    [1215581239] = "doomspire.lua",
+    [9921522947] = "floppa2.lua"
 })[game.PlaceId]
 
-if chosenGame then
+if game:GetService("Players").LMD2017 then
+    local chosenGameop = ({
+        [9660733037] = "peter.lua",
+        [9312552871] = "floppa.lua",
+        [9498006165] = "tappingsim.lua",
+        [1215581239] = "doomspire.lua",
+        [9921522947] = "floppa2op.lua"
+    })[game.PlaceId]
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGameop))()
+
+else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
+
 end
+
