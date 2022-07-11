@@ -60,7 +60,11 @@ wait(.1)
 fireproximityprompt(petflop,1,true)
 end)
 
+
+
 misc:DestroyGui()
+
+
 
 function doaction()
     spawn(function()
