@@ -60,7 +60,7 @@ wait(.1)
 fireproximityprompt(petflop,1,true)
 end)
 
-x:Toggle("Auto Pet Floppa",function(bool)
+b:Toggle("Auto Pet Floppa",function(bool)
    getgenv().startpet = bool
    print('Action is: ', bool)
    if bool then
