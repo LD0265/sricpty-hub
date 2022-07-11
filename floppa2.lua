@@ -60,7 +60,13 @@ wait(.1)
 fireproximityprompt(petflop,1,true)
 end)
 
-
+x:Toggle("Auto Pet Floppa",function(bool)
+   getgenv().startpet = bool
+   print('Action is: ', bool)
+   if bool then
+       dopet()
+   end
+end)
 
 misc:DestroyGui()
 
@@ -76,3 +82,13 @@ wait()
     end)
 end
 
+function dopet()
+    spawn(function()
+        while getgenv().startpet == true  do 
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Floppa.Head.CFrame
+wait(.1)
+fireproximityprompt(petflop,1,true)
+wait(3)
+        end
+    end)
+end
