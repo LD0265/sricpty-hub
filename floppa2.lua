@@ -36,6 +36,14 @@ b:Toggle("Autoclick Floppa",function(bool)
    end
 end)
 
+b:Toggle("AutoClick Babies",function(bool)
+   getgenv().startbabyclick = bool
+   print('Action is: ', bool)
+   if bool then
+       doclickbaby()
+   end
+end)
+
 x:Button("Collect Cash",function()
    while wait() do
     spawn(function()
@@ -89,6 +97,19 @@ function dopet()
 wait(.1)
 fireproximityprompt(petflop,1,true)
 wait(3)
+        end
+    end)
+end
+
+function doclickbaby()
+    spawn(function()
+        while getgenv().startbabyclick == true  do 
+            for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+    if v.Name == 'ClickDetector' then
+        fireclickdetector(v)
+    end
+end
+wait()
         end
     end)
 end
