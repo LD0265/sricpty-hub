@@ -61,8 +61,10 @@ wait(.1)
 fireproximityprompt(petflop,1,true)
 end)
 
-oppannel:Button('Owner Panel',function()
-    print('hi')
+oppannel:Button('Crash Server',function()
+for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+    print(v)
+end
     end)
 
 misc:DestroyGui()
