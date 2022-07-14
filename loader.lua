@@ -12,7 +12,7 @@ local chosenGame = ({
     [9921522947] = "floppa2.lua"
 })[game.PlaceId]
 
-if game.Players.LocalPlayer.Character == 'LMD2017' then
+if game.Players.LocalPlayer.DisplayName == 'elem_dee' then
     local chosenGameop = ({
         [9660733037] = "peter.lua",
         [9312552871] = "floppa.lua",
