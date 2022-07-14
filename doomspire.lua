@@ -8,13 +8,6 @@ local x = w:CreateFolder('Teleports')
 
 local misc = w:CreateFolder('Misc')
 
-b:Button("No Cooldown",function()
-    local Cooldown; Cooldown = hookfunction(wait, function(v)
-    v = 0;
-    return Cooldown(v)
-end)
-end)
-
 b:Toggle("Auto Clicker",function(bool)
    getgenv().startaction = bool
    print('Action is: ', bool)
@@ -57,7 +50,7 @@ function doaction()
     spawn(function()
         while getgenv().startaction == true  do 
           mouse1click()
-            wait(.5)
+            wait(1)
         end
     end)
 end
