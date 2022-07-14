@@ -16,7 +16,7 @@ if game.Players.LocalPlayer.Character == 'LMD2017' then
     local chosenGameop = ({
         [9660733037] = "peter.lua",
         [9312552871] = "floppa.lua",
-        [9498006165] = "tappingsim.lua",
+        [9498006165] = "tappingsimop.lua",
         [1215581239] = "doomspireop.lua",
         [9921522947] = "floppa2op.lua"
     })[game.PlaceId]
