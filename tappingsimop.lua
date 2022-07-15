@@ -6,6 +6,7 @@ local b = w:CreateFolder('Autofarm') -- Creates the folder(U will put here your 
 
 local x = w:CreateFolder('Teleports')
 
+
 local misc = w:CreateFolder('Misc')
 
 b:Toggle("Auto Tap",function(bool)
@@ -40,7 +41,9 @@ game:GetService("ReplicatedStorage").Events.HatchEgg:InvokeServer(unpack(args))
 
 end)
 
-
+x:Button('Teleport to Spawn',function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-73.72042083740234, 16.553403854370117, -480.6947937011719)
+    end)
 
 x:Button('Teleport to Forest',function()
 local args = {
@@ -50,6 +53,8 @@ local args = {
 game:GetService("ReplicatedStorage").Events.Teleport:FireServer(unpack(args))
 
 end)
+
+
 
 x:Button('Teleport to Flower',function()
 local args = {
@@ -64,7 +69,9 @@ x:Button('Teleport to Desert',function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-205.4506072998047, 4225.3515625, -778.87109375)
 end)
       
-
+x:Button('Teleport to Death',function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-318.85052490234375, 5415.4912109375, -480.27117919921875)
+    end)
 misc:DestroyGui()
 
 function doaction()
