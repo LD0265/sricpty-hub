@@ -25,7 +25,7 @@ b:Toggle("Auto Rebirth",function(bool)
 end)
 
 local eggtype
-b:Dropdown("Choose Egg Type",{"Starter","Wood Egg","Jungle Egg","Forest Egg","Bee Egg","Swamp Egg","Snow Egg"},true,function(x) --true/false, replaces the current title "Dropdown" with the option that t
+b:Dropdown("Choose Egg Type",{"Starter","Wood Egg","Jungle Egg","Forest Egg","Bee Egg","Swamp Egg","Snow Egg","Desert Egg"},true,function(x) --true/false, replaces the current title "Dropdown" with the option that t
    eggtype = x
 end)
 
@@ -60,7 +60,9 @@ end)
 x:Button('Teleport to Swamp',function()
 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-263.997833, 2110.14429, -656.576355, -1, 0, 0, 0, 1, 0, 0, 0, -1)
 end)
-      
+x:Button('Teleport to Desert',function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-205.4506072998047, 4225.3515625, -778.87109375)
+end)
       
 
 misc:DestroyGui()
