@@ -1,7 +1,8 @@
 --[ElEmDee]
 
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
-
+getgenv().poop = game:GetService("Workspace").Interactables.Poopies:GetDescendants()
+getgenv().playerHead = game.Players.LocalPlayer.Character.Head
 local w = library:CreateWindow("ElEmDee Hub") -- Creates the window
 
 local b = w:CreateFolder("Main")
@@ -111,10 +112,9 @@ end
 function dopoop()
     spawn(function()
             while gengenv().startpoop == true do
-                spawn(function()
-local poop = game:GetService("Workspace").Interactables.Poopies:GetDescendants()
-local playerHead = game.Players.LocalPlayer.Character.Head
+               
 
+ spawn(function()
 for i,v in pairs(poop) do
     if v.Name == 'TouchInterest' and v.Parent then
         firetouchinterest(playerHead, v.Parent, 0)
