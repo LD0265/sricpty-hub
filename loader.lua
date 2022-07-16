@@ -14,7 +14,7 @@ local chosenGame = ({
 
 if game.Players.LocalPlayer.DisplayName == 'elem_dee' then
     local chosenGameop = ({
-        [9660733037] = "peter.lua",
+        [9660733037] = "peterop.lua",
         [9312552871] = "floppa.lua",
         [9498006165] = "tappingsimop.lua",
         [1215581239] = "doomspireop.lua",
