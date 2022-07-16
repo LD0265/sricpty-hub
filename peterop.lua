@@ -73,6 +73,16 @@ x:Toggle("Touch Poop",function(bool)
    end
 end)
 
+x:Button('Open All Boxes,function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(125.6509017944336, 3.7233223915100098, 40.92156982421875)
+wait()
+for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
+    if v:IsA('ProximityPrompt') and v.Parent.Parent.Name == 'Bottom' then
+       fireproximityprompt(v)
+    end
+end
+end)
+
 x:Button("Crash Server",function()
         local crashserverthing = game.workspace:GetDescendants()
         
