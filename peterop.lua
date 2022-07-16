@@ -93,6 +93,7 @@ function doflash()
     spawn(function()
         while getgenv().startflash == true  do 
             fireproximityprompt(game:GetService("Workspace").Interactables.Objects.LightSwitchLivingR.BackBoard.Attachment.ProximityPrompt)
+                fireproximityprompt(game:GetService("Workspace").Interactables.Objects.LightSwitchKitchen.BackBoard.Attachment.ProximityPrompt)
             wait()
         end
     end)
