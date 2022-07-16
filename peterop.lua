@@ -47,7 +47,7 @@ b:Button("Tp to House",function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game:GetService("Workspace").Scenery.House.HouseModel.HouseFrame.Floor.CFrame
 end)      
 
-b:Toggle("Toggle",function(bool)
+x:Toggle("Ring Doorbell",function(bool)
    getgenv().startring = bool
       print('Action is: ', bool)
         if bool then
