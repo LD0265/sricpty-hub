@@ -64,6 +64,14 @@ x:Toggle("Spam Light",function(bool)
    end
 end)
 
+x:Toggle("Touch Poop",function(bool)
+   getgenv().startpoop = bool
+      print('Action is: ', bool)
+        if bool then
+       dopoop()
+   end
+end)
+
 x:Button("Crash Server",function()
         local crashserverthing = game.workspace:GetDescendants()
         
@@ -98,3 +106,21 @@ function doflash()
         end
     end)
 end
+
+
+function dopoop()
+    spawn(function()
+            while gengenv().startpoop == true do
+                local poop = game:GetService("Workspace").Interactables.Poopies:GetDescendants()
+local playerHead = game.Players.LocalPlayer.Character.Head
+
+for i,v in pairs(poop) do
+    if v.Name == 'TouchInterest' and v.Parent then
+        firetouchinterest(playerHead, v.Parent, 0)
+        wait()
+        firetouchinterest(playerHead, v.Parent, 1)
+    end
+end 
+                end
+            end)
+    end
