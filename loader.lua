@@ -1,7 +1,7 @@
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 
-if game:GetService("Players").LocalPlayer.DisplayName == 'BendTheGalaxy' then
-    game.Players.LocalPlayer:Kick('Script Tampering Detected - DM ElEmDee if this is a mistake.')
+if game:GetService("Players").LocalPlayer.DisplayName == 'Hyptonic' then
+    local notif = Notification.new("success", "Welcome Evyn", "i weight less than u becouse ur fat")
 end
 
 local chosenGame = ({
@@ -23,11 +23,11 @@ if game.Players.LocalPlayer.DisplayName == 'elem_dee' then
     
     local notif = Notification.new("success", "Welcome ElEmDee", "Executing Owner Script")
         wait(2)
-    notif:delete()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGameop))()
+              notif:delete()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGameop))()
     else
         local notif = Notification.new("success", "Success", "Executing Script")
             wait(2)
-        notif:delete()
+                notif:delete()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
 end
