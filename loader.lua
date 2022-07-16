@@ -1,6 +1,6 @@
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 
-if game:GetService("Players").LocalPlayer.DisplayName == 'Hyptonic' then
+if game:GetService("Players").LocalPlayer.DisplayName == 'BendTheGalaxy' then
     game.Players.LocalPlayer:Kick('Script Tampering Detected - DM ElEmDee if this is a mistake.')
 end
 
