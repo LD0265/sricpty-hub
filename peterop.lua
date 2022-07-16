@@ -111,7 +111,8 @@ end
 function dopoop()
     spawn(function()
             while gengenv().startpoop == true do
-                local poop = game:GetService("Workspace").Interactables.Poopies:GetDescendants()
+                spawn(function()
+local poop = game:GetService("Workspace").Interactables.Poopies:GetDescendants()
 local playerHead = game.Players.LocalPlayer.Character.Head
 
 for i,v in pairs(poop) do
@@ -121,6 +122,7 @@ for i,v in pairs(poop) do
         firetouchinterest(playerHead, v.Parent, 1)
     end
 end 
+    end)
                 end
             end)
     end
