@@ -73,7 +73,7 @@ x:Toggle("Touch Poop",function(bool)
    end
 end)
 
-x:Button('Open All Boxes,function()
+x:Button('Open All Boxes',function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(125.6509017944336, 3.7233223915100098, 40.92156982421875)
 wait()
 for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
@@ -82,7 +82,6 @@ for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
     end
 end
 end)
-
 x:Button("Crash Server",function()
         local crashserverthing = game.workspace:GetDescendants()
         
@@ -90,14 +89,7 @@ x:Button("Crash Server",function()
             print(v)
             end
         end)
-
-
-
 c:DestroyGui()
-
-
-
-
 function doring()
     spawn(function()
         while getgenv().startring == true  do 
@@ -106,8 +98,6 @@ function doring()
         end
     end)
 end
-
-
 function doflash()
     spawn(function()
         while getgenv().startflash == true  do 
@@ -117,13 +107,10 @@ function doflash()
         end
     end)
 end
-
-
 function dopoop()
     spawn(function()
             while gengenv().startpoop == true do
                
-
  spawn(function()
 for i,v in pairs(poop) do
     if v.Name == 'TouchInterest' and v.Parent then
