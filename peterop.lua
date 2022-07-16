@@ -85,7 +85,7 @@ end)
 
 x:Button('Open All Boxes',function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(125.6509017944336, 3.7233223915100098, 40.92156982421875)
-wait()
+wait(.3)
 for i,v in pairs(game:GetService("Workspace"):GetDescendants()) do
     if v:IsA('ProximityPrompt') and v.Parent.Parent.Name == 'Bottom' then
        fireproximityprompt(v)
