@@ -56,7 +56,7 @@ x:Toggle("Ring Doorbell",function(bool)
    end
 end)
 
-x:Toggle("Ring Doorbell",function(bool)
+x:Toggle("Spam Light",function(bool)
    getgenv().startflash = bool
       print('Action is: ', bool)
         if bool then
