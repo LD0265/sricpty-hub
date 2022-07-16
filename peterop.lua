@@ -56,8 +56,13 @@ x:Toggle("Ring Doorbell",function(bool)
    end
 end)
 
-
-
+x:Toggle("Ring Doorbell",function(bool)
+   getgenv().startflash = bool
+      print('Action is: ', bool)
+        if bool then
+       doflash()
+   end
+end)
 
 x:Button("Crash Server",function()
         local crashserverthing = game.workspace:GetDescendants()
@@ -78,6 +83,16 @@ function doring()
     spawn(function()
         while getgenv().startring == true  do 
             fireclickdetector(game:GetService("Workspace").Interactables.Objects.Doorbell.Button.ClickDetector)
+            wait()
+        end
+    end)
+end
+
+
+function doflash()
+    spawn(function()
+        while getgenv().startflash == true  do 
+            fireproximityprompt(game:GetService("Workspace").Interactables.Objects.LightSwitchLivingR.BackBoard.Attachment.ProximityPrompt)
             wait()
         end
     end)
