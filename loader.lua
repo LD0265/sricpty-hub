@@ -28,11 +28,11 @@ if not chosenGame or chosenGameop then
         local notif = Notification.new("success", "Welcome ElEmDee", "Executing Owner Script")
             wait(2)
                   notif:delete()
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGameop))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/opscripts/" .. chosenGameop))()
         else
             local notif = Notification.new("success", "Success", "Executing Script")
                 wait(2)
                     notif:delete()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/scripts/" .. chosenGame))()
     end
 end
