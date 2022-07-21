@@ -12,23 +12,27 @@ local chosenGame = ({
     [9921522947] = "floppa2.lua"
 })[game.PlaceId]
 
-if game.Players.LocalPlayer.DisplayName == 'elem_dee' then
-    local chosenGameop = ({
-        [9660733037] = "peterop.lua",
-        [9312552871] = "floppa.lua",
-        [9498006165] = "tappingsimop.lua",
-        [1215581239] = "doomspireop.lua",
-        [9921522947] = "floppa2op.lua",
-        [8750997647] = "tappinglegop.lua"
-    })[game.PlaceId]
-    
-    local notif = Notification.new("success", "Welcome ElEmDee", "Executing Owner Script")
-        wait(2)
-              notif:delete()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGameop))()
-    else
-        local notif = Notification.new("success", "Success", "Executing Script")
+if not chosenGame or chosenGameop then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/global.lua"))()
+            else
+    if game.Players.LocalPlayer.DisplayName == 'elem_dee' then
+        local chosenGameop = ({
+            [9660733037] = "peterop.lua",
+            [9312552871] = "floppa.lua",
+            [9498006165] = "tappingsimop.lua",
+            [1215581239] = "doomspireop.lua",
+            [9921522947] = "floppa2op.lua",
+            [8750997647] = "tappinglegop.lua"
+        })[game.PlaceId]
+        
+        local notif = Notification.new("success", "Welcome ElEmDee", "Executing Owner Script")
             wait(2)
-                notif:delete()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
+                  notif:delete()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGameop))()
+        else
+            local notif = Notification.new("success", "Success", "Executing Script")
+                wait(2)
+                    notif:delete()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/" .. chosenGame))()
+    end
 end
