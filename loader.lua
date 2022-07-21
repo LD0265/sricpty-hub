@@ -18,7 +18,8 @@ if game.Players.LocalPlayer.DisplayName == 'elem_dee' then
         [9312552871] = "floppa.lua",
         [9498006165] = "tappingsimop.lua",
         [1215581239] = "doomspireop.lua",
-        [9921522947] = "floppa2op.lua"
+        [9921522947] = "floppa2op.lua",
+        [8750997647] = "tappinglegop.lua"
     })[game.PlaceId]
     
     local notif = Notification.new("success", "Welcome ElEmDee", "Executing Owner Script")
