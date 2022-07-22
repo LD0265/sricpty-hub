@@ -15,7 +15,7 @@ local chosenGame = ({
 if not chosenGame or chosenGameop then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/global.lua"))()
             else
-    if game.Players.LocalPlayer.DisplayName == 'elem_dee' then
+    if game.Players.LocalPlayer.DisplayName == 'elem_dee' or 'IlIllIlllIlIllllIIll' then
         local chosenGameop = ({
             [9660733037] = "peterop.lua",
             [9312552871] = "floppa.lua",
