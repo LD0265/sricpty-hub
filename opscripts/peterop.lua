@@ -1,5 +1,7 @@
 --[ElEmDee]
 
+if loaded then
+
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 getgenv().poop = game:GetService("Workspace").Interactables.Poopies:GetDescendants()
 getgenv().playerHead = game.Players.LocalPlayer.Character.Head
@@ -133,3 +135,7 @@ game:GetService("ReplicatedStorage").RemoteEvents.Joe:FireServer(unpack(args))
         end
     end)
 end
+    else
+    print('Failed')
+    end
+
