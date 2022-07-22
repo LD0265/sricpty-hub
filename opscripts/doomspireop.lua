@@ -24,7 +24,9 @@ b:Toggle("Auto Clicker",function(bool)
 end)
 
 b:Button("Infinite Jump",function()
-        game:GetService("UserInputService").JumpRequest:connect(function()
+       local InfiniteJumpEnabled = false
+
+game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
 		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	end
