@@ -4,6 +4,8 @@ if game:GetService("Players").LocalPlayer.DisplayName == 'Hyptonic' then
     local notif = Notification.new("success", "Welcome Evyn", "i weight less than u becouse ur fat")
 end
 
+getgenv().loaded = true
+
 local chosenGame = ({
     [9660733037] = "peter.lua",
     [9312552871] = "floppa.lua",
@@ -15,7 +17,7 @@ local chosenGame = ({
 if not chosenGame or chosenGameop then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/LD0265/sricpty-hub/main/global.lua"))()
             else
-    if game.Players.LocalPlayer.DisplayName == 'elem_dee' or 'IlIllIlllIlIllllIIll' then
+    if game.Players.LocalPlayer.DisplayName == 'elem_dee' then
         local chosenGameop = ({
             [9660733037] = "peterop.lua",
             [9312552871] = "floppa.lua",
