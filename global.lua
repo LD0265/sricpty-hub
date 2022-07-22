@@ -28,7 +28,7 @@ b:Button('Remote Spy',function()
     end)
 
 b:Button('Infinite Jump',function()
-      getgenv().InfiniteJumpEnabled = false
+      getgenv().InfiniteJumpEnabled = true
 
 game:GetService("UserInputService").JumpRequest:connect(function()
 	if InfiniteJumpEnabled then
