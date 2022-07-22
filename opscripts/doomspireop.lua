@@ -1,3 +1,5 @@
+if loaded then
+
 local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
 
 local w = library:CreateWindow("ElEmDee Hub") -- Creates the window
@@ -58,4 +60,7 @@ function doaction()
             wait(.5)
         end
     end)
+end
+else
+	print('Failed')
 end
