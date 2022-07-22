@@ -27,7 +27,15 @@ b:Button('Remote Spy',function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua"))()
     end)
 
+b:Button('Infinite Jump',function()
+      getgenv().InfiniteJumpEnabled = false
 
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+      end)
 
 b:Toggle("Fire All Click Detectors",function(bool)
    getgenv().startclick = bool
